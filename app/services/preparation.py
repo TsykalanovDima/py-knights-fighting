@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from app.domain.types import KnightConfig, KnightStats
+from app.domain.types import ArmourPart, KnightConfig, KnightStats, Potion
 
 
-def _armour_protection(armour: list[dict[str, int]]) -> int:
-    return sum(part["protection"] for part in armour)
+def _armour_protection(armour: list[ArmourPart]) -> int:
+    return sum(armour_part["protection"] for armour_part in armour)
 
 
-def _apply_potion(stats: KnightStats, potion: dict | None) -> None:
+def _apply_potion(stats: KnightStats, potion: Potion | None) -> None:
     if potion is None:
         return
 

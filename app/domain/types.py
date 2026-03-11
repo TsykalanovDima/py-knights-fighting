@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from typing import Any, TypedDict
+from typing import TypedDict
 
 
 class ArmourPart(TypedDict):
-    part: str
+    name: str
     protection: int
 
 
@@ -36,4 +36,3 @@ class KnightStats(TypedDict):
 
 KnightsConfig = dict[str, KnightConfig]
 BattleResult = dict[str, int]
-AnyDict = dict[str, Any]

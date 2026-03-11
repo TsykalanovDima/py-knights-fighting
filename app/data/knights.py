@@ -16,9 +16,9 @@ KNIGHTS: dict[str, dict[str, Any]] = {
         "power": 45,
         "hp": 75,
         "armour": [
-            {"part": "helmet", "protection": 15},
-            {"part": "breastplate", "protection": 20},
-            {"part": "boots", "protection": 10},
+            {"name": "helmet", "protection": 15},
+            {"name": "breastplate", "protection": 20},
+            {"name": "boots", "protection": 10},
         ],
         "weapon": {"name": "Two-handed Sword", "power": 55},
         "potion": None,
@@ -28,8 +28,8 @@ KNIGHTS: dict[str, dict[str, Any]] = {
         "power": 30,
         "hp": 90,
         "armour": [
-            {"part": "breastplate", "protection": 15},
-            {"part": "boots", "protection": 10},
+            {"name": "breastplate", "protection": 15},
+            {"name": "boots", "protection": 10},
         ],
         "weapon": {"name": "Poisoned Sword", "power": 60},
         "potion": {
@@ -45,7 +45,7 @@ KNIGHTS: dict[str, dict[str, Any]] = {
         "name": "Red Knight",
         "power": 40,
         "hp": 70,
-        "armour": [{"part": "breastplate", "protection": 25}],
+        "armour": [{"name": "breastplate", "protection": 25}],
         "weapon": {"name": "Sword", "power": 45},
         "potion": {"name": "Blessing", "effect": {"hp": +10, "power": +5}},
     },
